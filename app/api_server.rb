@@ -5,8 +5,11 @@ require 'sinatra/reloader'
 require 'sinatra/cross_origin'
 require 'sinatra/namespace'
 require './app/models/movie'
+require 'app_configuration'
 
 Mongoid.load! "./app/config/mongoid.config"
+
+config = AppConfiguration.new
 
 before do
 	response.headers['Access-Control-Allow-Origin'] = 'http://localhost:8080'
