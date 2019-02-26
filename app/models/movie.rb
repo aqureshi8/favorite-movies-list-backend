@@ -6,7 +6,9 @@ class Movie
 
 	field :title, type: String
 	field :year, type: Integer
+	field :poster, type: String
 	field :rating, type: Integer
+	field :comment, type: String
 
 	validates :title, presence: true
 	validates :year, presence: true
