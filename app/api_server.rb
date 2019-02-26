@@ -12,7 +12,7 @@ Mongoid.load! "./app/config/mongoid.config"
 config = AppConfiguration.new
 
 before do
-	response.headers['Access-Control-Allow-Origin'] = 'https://favorite-movie-list-frontend.herokuapp.com'
+	response.headers['Access-Control-Allow-Origin'] = 'https://favorite-movies-list-frontend.herokuapp.com'
 end
 
 options "*" do
